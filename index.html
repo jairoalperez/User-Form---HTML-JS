@@ -12,84 +12,84 @@
 
 <body>
 
-    <div id="first">
-        <h1>Contact Information</h1>
-        <input type="email" placeholder="Enter Your E-Mail" id="email" required>
-        <input type="tel" placeholder="Enter Your Phone No." id="phone" required>
-        <input type="submit" value="Continue Details" onclick="sendInfo()">
+    <div id="first" class="container displayed">
+        <h1 class="title">Contact Information</h1>
+        <div class="coninci">
+            <input type="email" placeholder="Enter Your E-Mail" id="email" required>
+            <input type="tel" placeholder="Enter Your Phone No." id="phone" required>
+        </div>
+        <input type="submit" value="Continue Details" onclick="sendInfo()" class="btn">
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="container hidden" id="mid">
+        <h1 class="title">Travelers Details</h1>
 
+        <div class="con3">
+            <div class="con2">
+                <label>E-Mail</label> <br>
+                <input type="email" id="tdemail" value="" readonly="readonly">
+            </div>
 
-    <div>
-        <h1>Travelers Details</h1>
+            <div class="con2">
+                <label>Phone No.</label> <br>
+                <input type="tel" id="tdphone" value="" readonly="readonly">
+            </div>
+        </div>
 
-        <label>E-Mail</label>
-        <input type="email" id="tdemail" value="" readonly="readonly">
+        <div class="con3">
+            <div class="con2">
+                <label>Title</label> <br>
+                <select name="Title" id="title">
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Miss">Miss.</option>
+                    <option value="Ms">Ms.</option>
+                </select>
+            </div>
 
-        <label>Phone No.</label>
-        <input type="tel" id="tdphone" value="" readonly="readonly">
+            <div class="con2">
+                <label>First Name</label> <br>
+                <input type="text" placeholder="Enter Your First Name" id="name" required>
+            </div>
 
-        <br>
-        <br>
-        <br>
-
-        <label>Title</label>
-        <select name="Title" id="title">
-            <option value="Mr">Mr.</option>
-            <option value="Mrs">Mrs.</option>
-            <option value="Miss">Miss.</option>
-            <option value="Ms">Ms.</option>
-        </select>
-        <br>
-
-        <label>First Name</label>
-        <input type="text" placeholder="Enter Your First Name" id="name" required>
-        <br>
-
-        <label>Middle Name</label>
-        <input type="text" placeholder="Enter Your Middle Name" id="mid">
-        <br>
-
-        <label>Last Name</label>
-        <input type="text" placeholder="Enter Your Last Name" id="lastname" required>
-        <br>
-
-        <label>Date of Birth</label>
-        <input type="date" id="date" required>
-        <br>
-
-        <label>Gender</label>
-        <select name="Gender" id="gender" required>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
+            <div class="con2">
+                <label>Middle Name</label> <br>
+                <input type="text" placeholder="Enter Your Middle Name" id="midd">
+            </div>
+        </div>
 
         <br>
+
+        <div class="con3">
+            <div class="con2">
+                <label>Last Name</label> <br>
+                <input type="text" placeholder="Enter Your Last Name" id="lastname" required>
+            </div>
+
+            <div class="con2">
+                <label>Date of Birth</label> <br>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="con2">
+                <label>Gender</label> <br>
+                <select name="Gender" id="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        
         <br>
 
-        <input type="submit" value="Continue Details" onclick="sendFullInfo()">
+        <input type="submit" value="Continue Details" onclick="sendFullInfo()" class="btn">
 
     </div>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div id="last">
-        <h1>Profile</h1>
+    <div id="last" class="container hidden">
+        <h1 class="title">Profile</h1>
     </div>
 
 

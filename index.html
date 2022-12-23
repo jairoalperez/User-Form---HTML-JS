@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>A</title>
+</head>
+
+<body>
+
+    <div id="first">
+        <h1>Contact Information</h1>
+        <input type="email" placeholder="Enter Your E-Mail" id="email" required>
+        <input type="tel" placeholder="Enter Your Phone No." id="phone" required>
+        <input type="submit" value="Continue Details" onclick="sendInfo()">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div>
+        <h1>Travelers Details</h1>
+
+        <label>E-Mail</label>
+        <input type="email" id="tdemail" value="" readonly="readonly">
+
+        <label>Phone No.</label>
+        <input type="tel" id="tdphone" value="" readonly="readonly">
+
+        <br>
+        <br>
+        <br>
+
+        <label>Title</label>
+        <select name="Title" id="title">
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Miss">Miss.</option>
+            <option value="Ms">Ms.</option>
+        </select>
+        <br>
+
+        <label>First Name</label>
+        <input type="text" placeholder="Enter Your First Name" id="name" required>
+        <br>
+
+        <label>Middle Name</label>
+        <input type="text" placeholder="Enter Your Middle Name" id="mid">
+        <br>
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Your Last Name" id="lastname" required>
+        <br>
+
+        <label>Date of Birth</label>
+        <input type="date" id="date" required>
+        <br>
+
+        <label>Gender</label>
+        <select name="Gender" id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Continue Details" onclick="sendFullInfo()">
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div id="last">
+        <h1>Profile</h1>
+    </div>
+
+
+
+</body>
+
+</html>
